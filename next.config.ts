@@ -2,7 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-  
+  reactStrictMode : true,
+  transpilePackages : ['next-sanity'],
   images : {
     dangerouslyAllowSVG : true,
     remotePatterns : [
@@ -11,6 +12,9 @@ const nextConfig: NextConfig = {
         hostname : '*'
       }
     ]
+  },
+  experimental : {
+    esmExternals : false
   }
 };
 
