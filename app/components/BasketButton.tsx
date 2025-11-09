@@ -1,7 +1,7 @@
 "use client";
 
 import { Phone } from "@/sanity.types";
-import { useCart } from "../store/page";
+import { useCart } from "@/lib/store";
 
 const BasketButton = ({ product }: { product: Phone }) => {
   const { getItemsCount, addItems, removeItem } = useCart();
